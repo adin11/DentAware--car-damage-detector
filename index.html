@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DentAware - Car Damage Detection</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/static/favicon.ico" />
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
 
   <!-- Navbar -->
   <header class="bg-blue-700 text-white shadow-md">
@@ -21,7 +22,7 @@
   </header>
 
   <!-- Main Content -->
-  <main class="flex justify-center px-4 py-10">
+  <main class="flex-grow flex justify-center px-4 py-10">
     <div class="bg-white p-8 rounded-3xl shadow-lg w-full max-w-xl text-center">
       <h2 class="text-3xl font-extrabold mb-2 text-blue-700">Car Damage Detector</h2>
       <p class="text-sm text-gray-500 italic mb-1">Every dent tells a story — Automated damage detection.</p>
@@ -59,7 +60,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-200 py-4 text-center text-sm text-gray-700 mt-10">
+  <footer class="bg-gray-200 py-4 text-center text-sm text-gray-700">
     Project by <strong>Adin Raja</strong> | Powered by FastAPI & PyTorch
   </footer>
 

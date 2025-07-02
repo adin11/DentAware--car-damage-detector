@@ -6,7 +6,6 @@ from helper import predict
 
 app = FastAPI()
 
-# CORS (optional since we serve frontend from same app)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -14,15 +13,15 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-# Mount the static folder
+# Mount static folder
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
-# Serve index.html at root
+# Serve index.html from root
 @app.get("/", response_class=HTMLResponse)
-async def read_index():
+async def root():
     return FileResponse("app/static/index.html")
 
-# Prediction API
+# Prediction endpoint
 @app.post("/get_status")
 async def get_status(file: UploadFile = File(...)):
     try:
