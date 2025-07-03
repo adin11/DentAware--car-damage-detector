@@ -2,7 +2,7 @@ from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
-from helper import predict
+from app.helper import predict
 
 app = FastAPI()
 
