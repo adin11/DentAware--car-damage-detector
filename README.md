@@ -6,9 +6,9 @@ This tool has practical applications in **insurance automation**, **fleet manage
 
 ---
 ## 📹 Demo
-https://github.com/user-attachments/assets/f87b1c6c-a3c6-4dd3-969f-4951e5c44faf
----
+https://github.com/user-attachments/assets/8a29097e-343a-48d9-9c1f-c32a2d272f60
 
+---
 ## 🧠 Project Overview
 
 - 🎯 **Objective**: Automate car damage detection using deep learning
