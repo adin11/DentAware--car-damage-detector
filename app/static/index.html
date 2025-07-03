@@ -89,7 +89,7 @@
       document.getElementById('confidenceBar').style.display = 'none';
       document.getElementById('confidenceTitle').style.display = 'none';
 
-      fetch("https://dentaware-api.onrender.com/get_status", {
+      fetch("/get_status", {
         method: "POST",
         body: formData
       })
