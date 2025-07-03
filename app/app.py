@@ -1,5 +1,5 @@
 from fastapi import FastAPI, File, UploadFile
-from helper import predict
+from .helper import predict
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
