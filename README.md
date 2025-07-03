@@ -6,8 +6,7 @@ This tool has practical applications in **insurance automation**, **fleet manage
 
 ---
 ## 📹 Demo
-https://github.com/user-attachments/assets/aca1611c-fede-403d-9197-a27e2265fab8
-
+https://github.com/user-attachments/assets/f87b1c6c-a3c6-4dd3-969f-4951e5c44faf
 ---
 
 ## 🧠 Project Overview
