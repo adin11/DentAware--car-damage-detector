@@ -1,15 +1,12 @@
 # 🚗 DentAware – AI-Based Vehicle Damage Classification
 
-**DentAware** is a computer vision project that leverages deep learning to classify the type and location of damage on vehicles. Given an image of a car, the model predicts whether it exhibits **breakage**, **crushing**, or **no damage** across both front and rear views.
+**DentAware** is a project that leverages deep learning to classify the type and location of damage on vehicles. Given an image of a car, the model predicts whether it exhibits **breakage**, **crushing**, or **no damage** across both front and rear views.
 
 This tool has practical applications in **insurance automation**, **fleet management**, and **vehicle inspection workflows**, providing faster and more objective damage assessment using AI.
 
 ---
-
 ## 📹 Demo
-
-<!-- 👉 Add your video link here -->
-📽️ _[Video demonstration coming soon...]_
+https://github.com/user-attachments/assets/aca1611c-fede-403d-9197-a27e2265fab8
 
 ---
 
