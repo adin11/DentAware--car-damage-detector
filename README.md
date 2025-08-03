@@ -4,12 +4,12 @@
 
 This tool has practical applications in **insurance automation**, **fleet management**, and **vehicle inspection workflows**, providing faster and more objective damage assessment using AI.
 
+**URL: https://dent-aware.onrender.com**
 ---
 ## 📹 Demo
-https://github.com/user-attachments/assets/aca1611c-fede-403d-9197-a27e2265fab8
+https://github.com/user-attachments/assets/8a29097e-343a-48d9-9c1f-c32a2d272f60
 
 ---
-
 ## 🧠 Project Overview
 
 - 🎯 **Objective**: Automate car damage detection using deep learning
