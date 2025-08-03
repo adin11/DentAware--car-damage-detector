@@ -23,7 +23,7 @@ async def root():
 @app.post("/get_status")
 async def get_status(file: UploadFile = File(...)):
     try:
-        image_path = "temp.jpg"
+        image_path = "/tmp/temp.jpg"
         with open(image_path, "wb") as f:
             f.write(await file.read())
         return predict(image_path)

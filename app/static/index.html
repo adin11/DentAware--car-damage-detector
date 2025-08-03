@@ -88,13 +88,19 @@
       document.getElementById('output').textContent = '🔄 Analyzing...';
       document.getElementById('confidenceBar').style.display = 'none';
       document.getElementById('confidenceTitle').style.display = 'none';
-
-      fetch("/get_status", {
-        method: "POST",
-        body: formData
-      })
-      .then(response => response.json())
-      .then(data => {
+      
+        fetch("/get_status", {
+         method: "POST",
+         body: formData
+        })
+     .then(async response => {
+        if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`HTTP ${response.status}: ${errorText}`);
+    }
+    return response.json();
+  })
+  .then(data => {
         if (data.class) {
           document.getElementById('output').textContent = `✅ Assessment: ${data.class}`;
           const progress = document.getElementById('confidence');
@@ -107,9 +113,9 @@
         }
       })
       .catch(error => {
-        document.getElementById('output').textContent = "❌ Could not connect to the API.";
-        console.error("Error:", error);
-      });
+  document.getElementById('output').textContent = `❌ API Error: ${error.message}`;
+  console.error("Error:", error);
+});
     }
   </script>
 </body>
