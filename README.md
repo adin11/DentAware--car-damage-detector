@@ -2,7 +2,7 @@
 
 **DentAware** is a project that leverages deep learning to classify the type and location of damage on vehicles. Given an image of a car, the model predicts whether it exhibits **breakage**, **crushing**, or **no damage** across both front and rear views.
 
-***URL: https://dentaware.onrender.com***
+**URL: https://dentaware.onrender.com**
 ---
 
 ## 📹 Demo Video
