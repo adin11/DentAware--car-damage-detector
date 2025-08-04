@@ -1,13 +1,12 @@
-# 🚗 DentAware – AI-Based Vehicle Damage Classification
+# 🚗 DentAware – AI-Based Vehicle Damage Classifier
 
 **DentAware** is a project that leverages deep learning to classify the type and location of damage on vehicles. Given an image of a car, the model predicts whether it exhibits **breakage**, **crushing**, or **no damage** across both front and rear views.
 
-This tool has practical applications in **insurance automation**, **fleet management**, and **vehicle inspection workflows**, providing faster and more objective damage assessment using AI.
-
-**URL: https://dent-aware.onrender.com**
+***URL: https://dentaware.onrender.com***
 ---
-## 📹 Demo
-https://github.com/user-attachments/assets/8a29097e-343a-48d9-9c1f-c32a2d272f60
+
+## 📹 Demo Video
+https://github.com/user-attachments/assets/af9c2c2e-31dd-476c-85b8-3c0d03976edc
 
 ---
 ## 🧠 Project Overview
@@ -46,14 +45,6 @@ https://github.com/user-attachments/assets/8a29097e-343a-48d9-9c1f-c32a2d272f60
 
 - ✅ Model exported using `torch.save()` and loaded for inference in production
 - 🧮 Prediction returns both the **top class** and **confidence score** using `Softmax`
-- ⚙️ Served via **FastAPI**, with CORS enabled for frontend access
+- ⚙️ Built and deployed streamlit UI on render
 
 ---
-
-## 🛠️ Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/dentaware.git
-cd dentaware
