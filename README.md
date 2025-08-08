@@ -1,25 +1,24 @@
-# DentAware – AI-Based Vehicle Damage Classifier
+# 🚗 DentAware – AI-Based Vehicle Damage Classifier
 
-**DentAware** leverages deep learning to classify and locate damage on vehicles from images, predicting **breakage**, **crushing**, or **no damage** across front and rear views.
+**DentAware** is a project that leverages deep learning to classify the type and location of damage on vehicles. Given an image of a car, the model predicts whether it exhibits **breakage**, **crushing**, or **no damage** across both front and rear views.
 
-## Project URL
-Visit the [DentAware Web App](https://dentaware.streamlit.app) to try it out live.
+**URL:https://dentaware.streamlit.app**
 
-## Demo Video
-Watch our demo video for a visual walkthrough: [DentAware Demo](https://github.com/user-attachments/assets/af9c2c2e-31dd-476c-85b8-3c0d03976edc)
+
+## 📹 Demo Video
+https://github.com/user-attachments/assets/af9c2c2e-31dd-476c-85b8-3c0d03976edc
+
+---
+## 🧠 Project Overview
+
+- 🎯 **Objective**: Automate car damage detection using deep learning
+- 📷 **Input**: Car images showing **third-quarter front** or **rear views**
+- 🔍 **Output**: One of 6 damage classes with confidence score
+- 🛠️ **Solution**: Transfer learning using a fine-tuned ResNet50 model
 
 ---
 
-## Project Overview
-
-- **Objective**: Automate car damage detection using deep learning.
-- **Input**: Car images of third-quarter front or rear views.
-- **Output**: Classification into one of 6 damage categories with confidence scores.
-- **Solution**: Transfer learning with a fine-tuned ResNet50 model.
-
----
-
-## Target Classes
+## 🧾 Target Classes
 
 | View        | Damage Type  |
 |-------------|--------------|
@@ -32,22 +31,20 @@ Watch our demo video for a visual walkthrough: [DentAware Demo](https://github.c
 
 ---
 
-## Model Architecture & Training
+## 🧪 Model Architecture & Training
 
-- **Backbone**: ResNet50 pretrained on ImageNet.
-- **Technique**: Transfer learning with custom FC layers, fine-tuned on a specific car damage dataset.
-- **Preprocessing**: Image resizing, normalization, RGB conversion.
-- **Dataset Size**: ~1,700 labeled images.
-- **Validation Accuracy**: ~80% (Stratified split, image augmentation used).
-
----
-
-## Model Deployment
-
-- **Deployment**: Model exported using `torch.save()` for production inference.
-- **Prediction**: Returns top class and confidence score using `Softmax`.
-- **User Interface**: Implemented using Streamlit for intuitive interaction.
+- 🧠 **Backbone**: ResNet50 pretrained on ImageNet
+- 🔧 **Technique**: Transfer learning with final FC layers replaced and fine-tuned
+- 🧹 **Preprocessing**: Image resizing, normalization, RGB conversion
+- 📊 **Dataset Size**: ~1,700 labeled images
+- 📈 **Validation Accuracy**: ~80% (Stratified split, image augmentation used)
 
 ---
 
-This README provides an overview of DentAware, detailing its objectives, model architecture, training approach, and deployment strategy.
+## 🔬 Model Deployment
+
+- ✅ Model exported using `torch.save()` and loaded for inference in production
+- 🧮 Prediction returns both the **top class** and **confidence score** using `Softmax`
+- ⚙️ Built and deployed streamlit UI on render
+
+---
