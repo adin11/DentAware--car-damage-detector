@@ -2,6 +2,11 @@ import streamlit as st
 from helper import predict
 import os
 
+# 🛡️ Lightweight healthcheck endpoint to save resources
+if "healthcheck" in st.query_params:
+    st.write("✅ Healthcheck: OK")
+    st.stop()
+
 # --- Page Config ---
 st.set_page_config(
     page_title="DentAware - Vehicle Damage Classifier",
