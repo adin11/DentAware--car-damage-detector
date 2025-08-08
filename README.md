@@ -4,6 +4,7 @@
 
 **URL:https://dentaware.streamlit.app**
 
+---
 
 ## 📹 Demo Video
 https://github.com/user-attachments/assets/af9c2c2e-31dd-476c-85b8-3c0d03976edc
