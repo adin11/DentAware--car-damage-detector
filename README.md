@@ -20,12 +20,12 @@ https://github.com/user-attachments/assets/af9c2c2e-31dd-476c-85b8-3c0d03976edc
 
 ---
 
-## Repository Structure
-1. **model** : A folder containing the saved model
-2. **damage_prediction.ipynb** : jupyter file for protoyping about the project
-3. **train.py** : final reproducable python script to generate trained model
-4. **app.py** : streamlit app code
-5. **helper.py** : the main helper script which takes in new images from the user and classifies it
+## 📂 Repository Structure
+1. **model** :  A folder containing the saved model
+2. **damage_prediction.ipynb** :  jupyter file for protoyping about the project
+3. **train.py** :  final reproducable python script to generate trained model
+4. **app.py** :  streamlit app code
+5. **helper.py** :  the main helper script which takes in new images from the user and classifies it
 
 
 ---
