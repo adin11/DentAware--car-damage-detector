@@ -10,12 +10,23 @@
 https://github.com/user-attachments/assets/af9c2c2e-31dd-476c-85b8-3c0d03976edc
 
 ---
+
 ## 🧠 Project Overview
 
 - 🎯 **Objective**: Automate car damage detection using deep learning
 - 📷 **Input**: Car images showing **third-quarter front** or **rear views**
 - 🔍 **Output**: One of 6 damage classes with confidence score
 - 🛠️ **Solution**: Transfer learning using a fine-tuned ResNet50 model
+
+---
+
+## Repository Structure
+1. **model** : A folder containing the saved model
+2. **damage_prediction.ipynb** : jupyter file for protoyping about the project
+3. **train.py** : final reproducable python script to generate trained model
+4. **app.py** : streamlit app code
+5. **helper.py** : the main helper script which takes in new images from the user and classifies it
+
 
 ---
 
