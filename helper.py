@@ -5,7 +5,6 @@ import torch
 import torch.nn.functional as F
 import os
 
-
 class_names = ['Front Breakage', 'Front Crushed', 'Front Normal', 'Rear Breakage', 'Rear Crushed', 'Rear Normal']
 num_classes = len(class_names)
 trained_model = None
@@ -18,6 +17,7 @@ class CarClassifierResNet(nn.Module):
             param.requires_grad = False
         for param in self.model.layer4.parameters():
             param.requires_grad = True
+            
         self.model.fc = nn.Sequential(
             nn.Dropout(0.2),
             nn.Linear(self.model.fc.in_features, num_classes)
@@ -38,7 +38,7 @@ def predict(image_path):
 
     image_tensor = transform(image).unsqueeze(0)
 
-    global trained_model
+    global trained_model   # To ensure the model is loaded once and saved into memmory
     if trained_model is None:
         trained_model = CarClassifierResNet(num_classes)
         model_path = os.path.join(os.path.dirname(__file__), "model", "saved_model.pth")
