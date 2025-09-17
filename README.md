@@ -3,7 +3,7 @@
 ## Problem Statement
 Vehicle damage assessment is traditionally a manual, time-consuming, and error-prone process. Insurance companies, car rental services, and repair shops rely on human evaluators to identify the type and extent of damage on vehicles. 
 
-## Project Overview
+## 🔎 Project Overview
 **DentAware** is a project that leverages deep learning to classify the type and location of damage on vehicles. Given an image of a car, the model predicts whether it exhibits **breakage**, **crushing**, or **no damage** across both front and rear views.
 
 **URL: https://dentaware.streamlit.app**
