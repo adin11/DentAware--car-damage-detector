@@ -1,3 +1,5 @@
+![banner](banner.png)  
+
 # 🚗 DentAware – AI-Based Vehicle Damage Classifier
 
 ## Problem Statement
